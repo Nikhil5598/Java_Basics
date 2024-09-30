@@ -1,16 +1,25 @@
 interface Nikhil{
     void show();
 }
-class Basic implements Nikhil{
+interface Sai {
+    void name();
+}
+class Basic implements Nikhil,Sai{
     
-       
+       @Override
         public void show(){
-            System.out.println("Hello");
+            System.out.print("Hello");
+        }
+
+        @Override
+        public void name(){
+            System.out.println(" Nikhil");
         }
         public static void main(String[] args) {
         Basic sc=new Basic();
         sc.show();
+        sc.name();
        
-        // java branch
+        // java implements 2 interface
     }
 }
